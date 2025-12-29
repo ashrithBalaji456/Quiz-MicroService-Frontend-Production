@@ -11,8 +11,10 @@ import axios from "axios";
 import "./App.css";
 
 /* ================= API ================= */
+const GATEWAY_URL = import.meta.env.VITE_GATEWAY_URL;
+
 const quizApi = axios.create({
-  baseURL: "http://localhost:8765/quiz-service/quiz",
+  baseURL: `${GATEWAY_URL}/quiz-service/quiz`,
 });
 
 /* ================= CREATE QUIZ ================= */
