@@ -50,7 +50,8 @@ const CreateQuiz = () => {
       {quizId && (
         <div className="quiz-id-box">
           <p><strong>Quiz ID:</strong> {quizId}</p>
-          <code>http://localhost:5173/quiz/{quizId}</code>
+          <code>{`${window.location.origin}/quiz/${quizId}`}</code>
+
         </div>
       )}
     </div>
